@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
+        Nunito: ["Nunito", "sans-serif"],
       },
     },
     container: {

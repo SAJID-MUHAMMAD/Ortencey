@@ -8,10 +8,13 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
+import { PiHandbagSimple } from "react-icons/pi";
+import { LiaArrowRightSolid } from "react-icons/lia";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="absolute top-0 left-0 z-50 w-full">
       {/* =========Upper header============ */}
 
       <div className="container bg-[#3661FC] py-2 rounded-r-full text-sm text-white font-dmsans font-normal flex justify-between">
@@ -24,7 +27,7 @@ const Navbar = () => {
             href="tel: +88 ( 5548 ) 6548"
             target="blank"
           >
-            <FaPhoneAlt className=" text-[#FE651B]" />
+            <FaPhoneAlt className=" text-[rgba(254,101,27,1)]" />
             +88 ( 5548 ) 6548
           </a>
           <a
@@ -32,7 +35,7 @@ const Navbar = () => {
             href="mailto:infoyour@gmail.com"
             target="blank"
           >
-            <IoIosMail className="text-[#FE651B] text-xl" />
+            <IoIosMail className="text-[rgb(254,101,27)] text-xl" />
             infoyour@gmail.com
           </a>
         </div>
@@ -59,55 +62,67 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* =========Upper header============ */}
+      {/* ==================================================Upper header=================================== */}
 
-      {/* =========lower header============ */}
+      {/* =========================================================lower header=============================== */}
       <div className="container py-4 bg-white rounded-l-full flex items-center justify-between">
         <div className="pl-3">
-          <img src="/logo.png" alt="logo.png" />
+          <img src="/public/Home/logo.png" alt="logo.png" />
         </div>
         <ul className="flex items-center gap-5">
           <li>
-            <Link className="flex items-center">
+            <Link className="flex items-center gap-1 hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
               Home
-              <FaChevronDown />
+              <FaChevronDown className="text-xs" />
             </Link>
           </li>
           <li>
-            <Link>About</Link>
+            <Link className="hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
+              About
+            </Link>
           </li>
           <li>
-            <Link className="flex items-center">
+            <Link className="flex items-center gap-1 hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
               Services
-              <FaChevronDown />
+              <FaChevronDown className="text-xs" />
             </Link>
           </li>
           <li>
-            <Link className="flex items-center">
+            <Link className="flex items-center gap-1 hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
               Team
-              <FaChevronDown />
+              <FaChevronDown className="text-xs" />
             </Link>
           </li>
           <li>
-            <Link className="flex items-center">
+            <Link className="flex items-center gap-1 hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
               Pages
-              <FaChevronDown />
+              <FaChevronDown className="text-xs" />
             </Link>
           </li>
           <li>
-            <Link className="flex items-center">
+            <Link className="flex items-center gap-1 hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
               News
-              <FaChevronDown />
+              <FaChevronDown className="text-xs" />
             </Link>
           </li>
           <li>
-            <Link>Contact</Link>
+            <Link className="hover:text-[#FE651B] hover:border-b-2 hover:border-[#FE651B]">
+              Contact
+            </Link>
           </li>
         </ul>
-        <div className="flex items-center gap-3">
-          <h2>hello</h2>
-          <h2>hello</h2>
-          <h2>hello</h2>
+        <div className="flex items-center gap-6">
+          <span className="text-xl border-2 rounded-full p-3 border-[#3661FC] text-[#3661FC] cursor-pointer">
+            <CiSearch />
+          </span>
+          <span className="text-xl border-2 rounded-full p-3 border-[#3661FC] text-[#3661FC] cursor-pointer">
+            <PiHandbagSimple />
+          </span>
+          <button>
+            <Link className="flex items-center gap-1 py-4 px-7 bg-[#3661FC] text-white rounded-l-full rounded-r-full">
+              Free Quote <LiaArrowRightSolid />
+            </Link>
+          </button>
         </div>
       </div>
       {/* =========lower header============ */}
