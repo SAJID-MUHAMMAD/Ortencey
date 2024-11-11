@@ -12,3 +12,11 @@
 .coursesItems:hover .coursesTitel {
   color: #3661fc;
 }
+
+.homePricing:hover .pricingIcon {
+  background-color: #fe651b;
+}
+.homePricing:hover .pricingBton {
+  background-color: #fe651b;
+  color: white;
+}
