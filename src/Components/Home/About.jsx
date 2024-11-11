@@ -1,6 +1,6 @@
 import React from "react";
-import { RiFocus2Line } from "react-icons/ri";
 import { IoCheckmarkCircle } from "react-icons/io5";
+import { TbTargetArrow } from "react-icons/tb";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="w-1/2">
           <h3 className="text-xl flex items-center gap-1 font-dmsans font-medium text-[#3661FC]">
-            <RiFocus2Line className="text-[#FE651B]" />
+            <TbTargetArrow className="text-[#FE651B]" />
             About Our Company
           </h3>
           <h2 className="font-bold font-Nunito text-4xl text-black w-[550px] pt-4 pb-7">

@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
         Nunito: ["Nunito", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
       },
     },
     container: {
